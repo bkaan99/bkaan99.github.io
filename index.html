@@ -304,17 +304,32 @@ I designed the electronic system integration (motors, esc, battery, servo, fligh
                 <div class="h-50"></div>
             </div>
             <div class="col-md-8" data-aos="fade-up">
-                <form action="mail.php" class="contact-bg" id="contact-form" name="contact" method="post" >
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" />
-                    <input type="email" name="email" class="form-control" placeholder="Your E-mail" />
-                    <input type="text" name="phone" class="form-control" placeholder="Phone Number" />
-                    <textarea name="message" class="form-control" placeholder="Your Message" style="height:120px"></textarea>
-                    <button id="submit" type="submit" name="submit" class="btn btn-glance">Send</button>
-                    <div id="success">
-                        <p class="green textcenter"> Your message was sent successfully! I will be in touch as soon as I can. </p>
+                <form action="https://formspree.io/f/xvolznyg" method="post"> <!-- your@email.com yerine kendi mail adresimizi yazıyoruz. -->
+                    <div class="input-block">
+                        <label for="contact_author">
+                            <strong>Name and Surname </strong></label>
+                        <input type="text" name="contact_author" id="contact_author" class="form-control" required>
                     </div>
-                    <div id="error">
-                        <p> Something went wrong, try refreshing and submitting the form again. </p>
+                    <div class="input-block">
+                        <label for="_replyto">
+                            <strong>E-Mail Adress</strong></label>
+                        <input type="email" name="_replyto" id="_replyto" class="form-control" required>
+                    </div>            
+                    <div class="input-block">
+                        <label for="contact_subject">
+                            <strong>Subject</strong></label>
+                        <input type="text" name="contact_subject" id="contact_subject" class="form-control" required>
+                    </div>
+                    <div class="textarea-block">
+                        <label for="contact_content">
+                            <strong>Text</strong></label>
+                        <textarea name="contact_content" id="contact_content" class="form-control" style="height:120px" required></textarea>
+                    </div>
+                    <input type="hidden" name="_next" value="https://site.io/thanks.html"> <!-- Form formspree.io adresine gönderildikten sonra tekrar sitenize dönüş yapılarak sitenizdeki thanks.html dosyasının görüntülenmesini sağlıyor. -->
+                    <div class="textarea-block">
+                        <label for="contact_content">
+                            <strong>Send</strong></label>
+                            <button type="submit" class="btn btn-glance" value="Send">GNder</button>
                     </div>
                 </form>
             </div>
