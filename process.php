@@ -1,6 +1,6 @@
 <?php
 
-    $to = "bilgekagan99@gmail.com";
+    $to = "https://formspree.io/f/xvolznyg";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $headers = "From: $from";
