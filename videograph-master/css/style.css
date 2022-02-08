@@ -330,11 +330,13 @@ ol {
 }
 
 .header__logo {
-    padding: 30px 0;
+    padding: 35px;
 }
 
 .header__logo a {
     display: inline-block;
+    font-size: 18px;
+    color: white;
 }
 
 .header__nav__option {
