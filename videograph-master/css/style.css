@@ -1278,6 +1278,73 @@ ol {
     margin-bottom: 45px;
 }
 
+.devices__item {
+    margin-bottom: 45px;
+}
+
+.devices__item:hover .devices__item__icon:after {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.devices__item h4 {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 26px;
+    margin-bottom: 18px;
+}
+
+.services__item p {
+    margin-bottom: 0;
+}
+
+.devices__item__icon {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.devices__item__icon:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    -webkit-transition: all, 0.5s;
+    -o-transition: all, 0.5s;
+    transition: all, 0.5s;
+}
+
+
+/*---------------------
+  Services Page
+-----------------------*/
+
+.services-page {
+    background: #100028;
+    padding-bottom: 50px;
+}
+
+
+/*---------------------
+  Devices
+-----------------------*/
+
+.services {
+    background-image: url("https://raw.githubusercontent.com/bkaan99/bkaan99.github.io/main/videograph-master/img/bui%C5%9Fteolm.png");
+    padding-bottom: 60px;
+    padding-top: 110px;
+}
+
+.services__title p {
+    margin-bottom: 45px;
+}
+
 .services__item {
     margin-bottom: 45px;
 }
@@ -1323,7 +1390,7 @@ ol {
 
 
 /*---------------------
-  Services Page
+  Devices Page
 -----------------------*/
 
 .services-page {
