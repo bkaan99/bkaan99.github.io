@@ -136,7 +136,7 @@
 
     // :: WOW Active Code
     if ($window.width() > 767) {
-        new WOW().init();
+        //new WOW().init();
     }
 
 })(jQuery);
